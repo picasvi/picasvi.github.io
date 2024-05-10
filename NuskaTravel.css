@@ -1,0 +1,242 @@
+ @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap'); 
+* {
+     font-family: "Signika", sans-serif;
+     box-sizing: border-box;
+   }
+
+.menu {   /*menú en home*/                                
+        position: relative; 
+        font-family: "Signika", sans-serif;
+        background-size: cover;   
+        background-color: #C06E52;
+        padding: 15px;
+        text-shadow: 0 2px 6px black;  
+        text-align: center;  
+        width: 100%;
+}
+
+body {
+       margin: 0;
+       background-color: #F96F5D;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+a:hover { /*area donde se pone el cursor*/
+    background: black; 
+}
+
+ a {  /*propiedad para las opciones del menú(enlaces)*/
+     text-decoration: none;      
+     font-size: 40px;
+     margin: 10px; 
+     color: white;
+   }
+
+header {
+            background-image: url(threeflags.jpg);
+            background-size: cover;
+            padding: 160px;
+            width: 100%; 
+}
+
+
+/*headers de los países */
+
+.headerLT {
+    background-image: url(LTHeader.jpeg);
+}
+
+.headerLV {
+    background-image: url(LVHeader.jpg);
+}
+
+.headerEE {
+    background-image: url(EEHeader.jpg);
+}
+
+/*article*/
+article {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*aside*/
+aside {
+    color: white;
+    margin-left: 10px;
+    
+}
+
+/*motivos*/
+.motivos {
+    float: right;
+    margin-top: 16.5px;
+    margin-right: 15px;
+
+}
+
+/*descarga folletos*/
+.descargas {
+    margin-left: 300px;
+    margin-top: -90px;
+}
+
+/*botón de buscar viaje*/
+
+.button {
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 90px;
+    background-color: #FBF2C0;
+}
+
+/*caja de buscar viaje*/
+
+.caja {
+    padding: 10px 10px 10px 10px; 
+    border-radius: 20px;
+    background-color: #48392A;
+    background-size: 20px 20px;
+    width: 250px;
+    height: 250px;
+}
+
+/*botón de descargas*/
+
+.download {
+    float: left;
+    width: 240px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #FBF2C0;
+}
+
+/*clase para el artículo de los acuerdos*/
+.acuerdos {
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*clases para las dimensiones de los logos de las aerolíneas*/
+.iberia {
+    width: 430px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.norwegian {
+    width: 430px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.baltic {
+    width: 470px;
+    height: 150px;
+    float:left;
+    margin-right: 10px;
+}
+
+.lista {
+    padding-bottom: 10px;
+}
+
+/*footer*/
+footer {
+   background-color:  black;
+   color: white;
+   background-size: cover;
+   padding: 40px;
+   width: 100%; 
+   text-align: center;
+}
+
+.menuCountries {
+    position: fixed; 
+        font-family: "Signika", sans-serif;
+        background-size: cover;   
+        background-color: #C06E52;
+        padding: 15px;
+        text-shadow: 0 2px 6px black;  
+        text-align: center;  
+        width: 100%;
+}
+
+.mapa {
+    margin: 10px; 10px; 10px; 10px;  
+    float: left;
+    border-radius: 100px;  
+}
+
+.commonwealth {
+    height: 350px;
+    width: 550px;
+    margin: 10px; 10px; 10px; 10px; 
+    float: right;   
+    border-radius: 300px; 
+}
+
+.abecele {
+    height: 350px;
+    width: 550px;
+    margin: 10px: 10px; 10px; 10px;
+    float: right;
+    border-radius: 80px;
+}
+
+.bread {
+    height: 150px;
+    width: 350px;
+    margin: 10px; 10px; 10px; 10px;  
+    float: left;
+    border-radius: 100px;  
+}
+
+.albert {
+    height: 550px;
+    width: 350px;
+    margin: 10px; 10px; 10px; 10px; 
+    float: right;   
+    border-radius: 300px; 
+}
+
+.dinner {
+    height: 250px;
+    width: 350px;
+    margin: 10px; 10px; 10px; 10px; 
+    float: left;   
+}
+
+.mapaEST {
+    height: 350px;
+    width: 450px;
+    margin: 10px; 10px; 10px; 10px;  
+    float: left;
+    border-radius: 100px;  
+}
+
+.history {
+    height: 350px;
+    width: 550px;
+    margin: 10px; 10px; 10px; 10px; 
+    float: right;   
+    border-radius: 300px; 
+}
+
+
+
+
