@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio-cambiar-imagen</title>
+    <style>
+        .peque {
+            border: 1px solid grey;
+            filter: grayscale(100%);
+            width: 150px;
+            
+        }
+        .peque:hover {
+            filter: grayscale(0%);
+        }
+        
+        .grande {
+            float: right;
+            width: 800px;
+        }
+        
+        
+        
+    
+    </style>
+  <script>
+ 
+     function cambiar(imagens) {
+      document.getElementById('masgrande').src=imagens;
+     }
+</script>
+
+
+</head>
+<body>
+    <img id="masgrande" class="grande" src="imagengrande.jpg">
+    <p>
+    <img  class="peque" onClick="cambiar('imagen2.jpg')" src="imagen2.jpg"><br>
+    <img  class="peque" onClick="cambiar('imagen3.jpg')" src="imagen3.jpg"><br>
+    <img  class="peque" onClick="cambiar('imagen4.jpg')" src="imagen4.jpg">
+    </p>
+    
+  
+</body>
+</html>

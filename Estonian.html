@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javier-Piñas-Castellanos</title>
+    <link rel="icon" href="star.png">      
+    <!-- favicon-->
+    <style>
+        /***Tipografía***/ 
+        @import url('https://fonts.googleapis.com/css?family=Merriweather'); /**Importa la fuente desde GoogleFonts***/
+        @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+        @import url('https://fonts.googleapis.com/css?family=Hind');
+        
+        * {                   /***Hoja de estilos global, sirve para aplicar estos estilos a todo el documento***/
+           font-family: "Merriweather", sans-serif; /***fuente tipográfica***/
+           box-sizing: border-box; //***box-sizing sirve para cambiar el modelo de caja por defecto, y border-box hace que el ancho especificado sea el equivalente al ancho total***/
+        }
+        
+        p {  /***Párrafo***/
+          font: 1.2rem 'Hind', sans-serif; /***rem se usa para modificar el tamaño de la fuente***/
+          margin: 10px 10px 10px 10px;   /***margin-top sirve para establecer la anchura del margen superior de los elementos del bloque***/
+          color: white; /***color añade el color seleccionado***/ 
+          
+          
+                
+        }
+    
+        h1, h2, {   /***h1, h2, etc son los encabezados, van de mayor tamaño (h1) a menor (h2)***/
+         
+          text-align:center; /***text-align:center sirve para centrar el contenido***/
+        }
+      
+        
+        
+        h2 {
+          font-size: 5.0rem; 
+          color: white; 
+          text-align: center;
+          font-family: "MedievalSharp", sans-serif;
+          padding-top: 70px; //***se usa para establecer la anchura de relleno superior de los elementos***//
+          
+         
+          
+          
+         }
+        
+
+        
+        h1 {
+        font-size: 5.5rem; 
+        font-family: "Merriweather", sans-serif; 
+        color: white; 
+        text-align: center;
+            
+        }
+        
+        .flags {                                   /**clase para los iconos de banderas***/
+            height: 30px;                          /**height establece la altura, y width la anchura**/
+            width: 30px; 
+            float: left;                           /**float left hace que la imagen se quede a la izquierda**/
+        }
+        
+        .tree {                                /**clase para la imagen del árbol de navidad**/ 
+            margin: 10px; 10px; 10px; 10px;  /***margin establece la anchura de algunos o todos los márgenes***/
+            float: left;
+            border-radius: 300px;  /**sirve para hacer que el borde sea redondeado**/
+        }
+        
+        .santa {                              /**clase para la imagen de Santa Claus**/
+            height: 350px;
+            width: 550px;
+            margin: 10px; 10px; 10px; 10px; 
+            float: left; 
+            border-radius: 300px; 
+        }
+        
+        .hw {                            /**clase para la imagen del vino caliente**/
+            height: 350px;
+            width: 550px;
+            margin: 10px; 10px; 10px; 10px; 
+            float: right;   /***float right hace que la imagen vaya a la derecha**/
+            border-radius: 300px; 
+        }
+        
+        
+        .danza { //**clase para la imagen de los bailarines**// 
+            height: 260px;
+            width: 360px;
+            float: right;
+            border-radius: 300px;
+        }
+        
+        .ifr {                /**coloca el mapa de Google con la ubicación del mercadillo**// 
+            margin: 10px; 10px; 10px; 10px;
+            height: 630px;
+            float: left; 
+        }
+        
+        .tran { //**coloca los iconos de bus y tranvía**// 
+            height: 30px;
+            width: 30px; 
+            float: left;
+            
+           
+        }
+        
+        .ctra { //**clase para la imagen del tranvía navideño**// 
+            height:190px;
+            width: 590px;
+            float:right; 
+            border-radius: 300px;
+        }
+        
+        .rs { //**clase para los iconos de redes sociales**// 
+            height: 30px;
+            width: 30px;
+            float: right; 
+            
+            
+        }
+        
+        .env {                                                          /**clase para el botón de enviar**/
+            background-color: red;                                    /**pone el color rojo de fondo**/
+            margin: 10px; 
+            width: 90px;
+            float: left;
+            text-align: center;
+            font: 1.1rem "Hind", sans-serif;
+            color: white; 
+            padding: 6px 14px;
+            
+        }
+        
+        
+       /***Estructura***/
+        
+        body {                                     /**cuerpo del documento**/
+            margin: 0;
+            background: #BC0000;                   
+            
+        }
+        .menu {                                    /**menu para acceder a los apartados**/
+        width: 100%;
+        background: darkblue no-repeat top center fixed ;   /**no-repeat para que no se repita el fondo, center fixed para que se quede fijo**/
+        font-family: "Merriweather", sans-serif;
+        background-size: cover;          /**especifica el tamaño de las imágenes de fondo**/
+        padding: 15px;
+        text-shadow: 0 2px 6px black;   /**hace que aparezca sombreado el texto**/ 
+        text-align: center;
+        position: fixed;        /**hace que se quede fijo el menu en toda la página**/ 
+        }
+        
+        a:hover {                     /*hover aplica dicho estilo al enlace donde el usuario ha posicionado el puntero del ratón*/
+            background: black; 
+        }
+        
+        a {                          /*propiedad para las opciones del menú(enlaces)*/
+         text-decoration: none;      /*hace que el enlace no esté subrayado*/ 
+         color: white; 
+         margin: 10px; 
+        }
+        
+        
+        
+            
+        
+        
+            
+            
+       /***Elementos***/ 
+        header {                                    /**elemento de encabezado**/ 
+            background-image: url(christmas.jpg); /**imagen de fondo del encabezado**/ 
+            padding: 210px;
+            background-size: cover;
+            
+            width: 100%; 
+            
+        }
+        
+        article {                         /**elemento que contiene texto**/ 
+            max-width: 1200px;           /**anchura máximo de un cuerpo de texto**/ 
+            margin: auto; 
+            overflow: hidden;            /**sirve para que el contenido se recorte y no se muestren barras de posición**/
+            background-color: darkgreen;
+            
+        }
+        
+        form {
+            font: 1.0rem;  /***rem se usa para modificar el tamaño de la fuente***/
+           
+          margin: 10px 10px 10px 10px;   /***margin-top sirve para establecer la anchura del margen superior de los elementos del bloque***/
+          color: white; /***color añade el color seleccionado***/ 
+        }
+        
+        footer {                       /**pie de página**/ 
+            text-align: center;
+            background-color: darkblue;
+            width: 100%;
+            background-size: cover;
+            padding: 25px;
+        }
+        
+       
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+   <nav class="menu">
+    <img class="flags"src="001-estonia.svg" title="Eesti keel">
+    <img class="flags"src="002-uk.svg" title="English">
+    <img class="flags"src="003-russia.svg" title="Pусский">
+    <img class="flags"src="004-finland.svg" title="Suomeksi">
+    <img class="flags"src="005-flag.svg" title="Deutsch">
+    <img class="flags"src="006-sweden.svg" title="Svenska">
+    <a href="#descripcion">Kirjeldus</a>
+    <a href="#calendario">Kalender</a>
+    <a href="#participantes">Osalejad</a>
+    <a href="#lugar">Koht</a>
+    <a href="#inscripcion">Pealkiri</a>
+    <img class="rs"src="facebook.svg" title="Facebook">
+    <img class="rs"src="instagram.svg" title="Instagram">
+  </nav>
+    
+    
+    <header>
+        <h1>Tallinna Jõuluturg</h1>
+    </header>
+    <hr>
+    <article>
+   <h2 id="descripcion">Kirjeldus</h2>
+    <hr>
+   
+   <p>Traditsioonist lähtudes avab Tallinna jõulupood sel aastal oma kabiinid, et anda meile rõõm nautida muinasjuttule iseloomulikku jõule. Raekoja platsil on suur jõulupuu, jõulude sümbol, ja meie linn on uhke, et ta on esimene koht maailmas, kus jõulupuu püstitati: 1441. aastal enam, mitte vähem!</p>
+   <img class="tree" src="treechristmas.jpg" title="Öösel omandab see maagilisema värvaine">
+   <p>Viimastel aastatel on Raekoja Plats'i ilusate keskaegsete hoonetega tervikuna kujunenud turg mitte ainult Eestist, vaid kogu Euroopast jõulude ja turismi sümboliks, mida kirjeldatakse kui üht maailma parimat jõuluturgu. kontinendil ja maailmas, mis saavad igal aastal ligi miljon külastajat üle kogu maailma, lastele on tagatud kindlus tänu jõuluvana, kes oma puumajast annab kommid lastele, kes kõige paremini salme jagavad (laulavad ja kirjutavad salme või luuletused on meie riigi traditsioonid meie Läti ja Leedu Balti naabritega). Erinevates kabiinides saate osta kõrgekvaliteedilistest käsitöödest talvitarvikutele, nagu kindad või sallid. Ja kui sa vaatad kioskide vaatamist ja te märkate, et teie kõht röövib raevukalt, saate oma söögiisu rahuldada mõne ingverikommi või maitsva Eesti röstitud roogaga. Võite proovida ka kareda veini, tüüpilist jooki Baltimaadest, Skandinaavias ja Venemaalt. Või rahvusvaheline kuum šokolaad, mis on alati väga hea. Jõulud on olemas ja seda tugevdab eriline kultuuriprogramm. Nädalavahetustel mängivad turguetapil Eestist ja välismaalt erinevad muusikarühmad ning igal pühapäeval tulevad adventperioodi ajal küünal, mis on samal ajal Eesti ja Vene luterlike kirikute pastoritega ning Linnapea annab turule tervitavatele inimestele tervituskõnesid ning 2019. aasta tervitab veelgi eriprogrammi!<br>
+   Tallinna jõuluturg tervitab kõiki avatud relvaga. Häid jõule.</p> <br></article>
+   <hr>
+   
+   <article>
+   <h2 id="calendario">Kalender</h2>
+   <hr> 
+   
+   <p>Turg avab oma uksed 16. novembrist 7. jaanuarini iga päev kella 10.00-20.00. Kuumaid jooke (kuuma veini) saab nautida pühapäevast neljapäevani kuni kella 22.00 ning reedeti ja laupäeviti kuni 23.00. Eriline jõuluprogramm: reedel kella 17.00-17.00, laupäeviti ja pühapäeviti kella 12.00-14.00 Alates 2. detsembrist tervitab Jõuluvana lapsi esmaspäevast pühapäevani kella 12.00-st. 19:00 </p> 
+   <img class="santa"src="Santa.jpg" title="Lahke Jõuluvana">
+   <img class="hw" src="hotwine.jpg" title="Hõõgvein toonib keha"><br></article>
+   <hr>
+   
+   <article>
+   <h2 id="participantes">Osalejad</h2>
+   <hr>
+   
+   <p>Igal nädalavahetusel osalevad erinevad rahvusgrupid meie riigist ja välismaalt, kes on valmis andma meile elava näituse. <br>
+   <strong>Reede, 16. november:</strong>Viisuveeretajad (Eesti), Carolina (Ameerika Ühendriigid) <br>
+   <strong>Laupäev, 17. november:</strong>Black and White (Iirimaa), Mariliis Jögeva (Eesti) Solas (Iirimaa), Tantsusarvikud (Eesti) <br>
+   <strong>Pühapäev, 18. november:</strong>Pühalepa (Eesti), Tantsuskool RAPTI (Kreeka) <br>
+   <strong>Reede, 23. november:</strong>Leesikad (Eesti) <br>
+   <strong>Laupäev, 24. november:</strong>Juhukse (Eesti), Zahira (Eesti) <br>
+   <strong>Pühapäev, 25. november:</strong>Cantitores (Soome), Kirmas (Eesti) <br>
+   <strong>Reede, 30. november:</strong>Nömme (Eesti), Söleke (Eesti), Free Flow Studio (Eesti) <br>
+   <img class="danza"src="tantsu.jpg" title="Tantsusarvikud, kuulus eesti folkgrupp">
+   <strong>Laupäev, 1. detsember:</strong>Moroshka (Venemaa), Tammed ja Toomed (Eesti), Harku Harakad (Eesti) <br>
+   <strong>Pühapäev 2. detsember:</strong>Kopli (Eesti), Tallinna luteri koguduste koorid. <br>
+   <strong>Reede 7. detsember:</strong>Vöör ja Ahter (Eesti), Tantsuskool RAPTI (Kreeka) <br>
+   <strong>Laupäev 8. detsember:</strong>Kuu (Eesti), Panter (Eesti), KT Stuudio (Eesti) <br>
+   <strong>Pühapäev 9. detsember:</strong>Ellerhein (Eesti), Ingliskad (Eesti) <br>
+   <strong>Reede 14. detsember:</strong>Köku (Eesti), VAT Stuudio (Eesti) <br>
+   <strong>Laupäev 15. detsember:</strong>Tuisuline (Eesti), Happy Feet (Uus Meremaa), Jürid-Maarid (Eesti) <br>
+   <strong>Pühapäev 16. detsember:</strong>Siki (Eesti), MYDANCE (Rootsi) <br>
+   <strong>Reede 21. detsember:</strong>Desiree (Eesti) <br>
+   <strong>Laupäev 22. detsember:</strong>Kolgaküla Laneerid (Eesti), Free Flow Studio (Eesti) <br>
+   <strong>Pühapäev 23. detsember:</strong>Löoke (Eesti), Modus (Saksamaa) <br>
+   <strong>Reede 28. detsember:</strong>LTF (Ameerika Ühendriigid), Alhambra (Ameerika Ühendriigid), Asmarah (Eesti), Valeria Nikolajeva (Venemaa) <br>
+   <strong>Laupäev 29. detsember:</strong>Beatrice Nebis (Eesti), Aler (Gruusia) <br>
+   <strong>Pühapäev 30. detsember:</strong>Modus (Saksamaa), Lili Adeni (Eesti) <br>
+   <strong>Reede 31. detsember:</strong>Eriline uusaasta programm, Nömme Huvikooli (Eesti) <br>
+   <strong>Laupäev 4. jaanuar:</strong>Terek (Venemaa), Jagody (Poola), Sakala Laululapsed (Eesti) <br>
+   <strong>Pühapäev 5. jaanuar:</strong>Pääsuke (Eesti), Kodu (Eesti), Leigarid (Eesti) <br>
+   <strong>Reede 6. jaanuar:</strong>Koit (Eesti), Juri Zaljubovski (Venemaa), Mustad Kassi (Eesti).Turu sulgemine <br>
+   </p></article>
+   <hr>
+   
+   <article>
+   <h2 id="lugar">Osalejad</h2>
+   <hr>
+   <iframe class="ifr" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2028.765687735836!2d24.744697181961108!3d59.43698237077853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1544343737597" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <div>
+   <p>Raekoja Plats asub Tallinna ajaloolise keskuse südames. Nende turistide jaoks, kes on viibinud väljaspool keskust või perifeeria elanikke, on linna bussi- ja trammipeatused vaid 5-minutilise jalutuskäigu kaugusel. Trammi liin 4 ühendab Raekoja platsid otse lennujaama.</p>
+   <p><img class="tran" src="001-bus.svg">Lähim bussipeatus: Viru (read 21,21B,40,41,48,73)</p><br>
+   <p><img class="tran" src="002-tram.svg">Lähim trammipeatus: Viru (read 3 ja 4)</p><br>
+   <img class="ctra" src="christram.jpg" title="Jõulude spetsiaalne tramm">
+   
+   </div><br></article>
+   <hr>
+   
+   <article>
+   <h2 id="inscripcion">Pealkiri</h2>
+   <hr>
+       <p>Vaba jõululaevade töötoadesse registreerimiseks saate täita järgmise vormi:</p>
+   <form  action="" method="post" >
+    
+    <table>
+        <tr>
+            <td>Suunas</td>
+            <td><input type="text" name="direccion"></td>
+        </tr>
+        <tr>
+            <td>Nimi</td>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <td>Perekonnanimi</td>
+            <td><input type="text" name="apellidos"></td>
+        </tr>
+        <tr>
+            <td>Postiindeks</td>
+            <td><input type="text" name="cp"></td>
+        </tr>
+        
+        
+        
+    </table>
+         <input class="env" type="submit" value="Saatke"><br>
+         
+       </form><br></article>
+       <hr>
+   
+   
+   <footer>
+   <p>Tallinn Christmas Market 2018 Estonian version <br>
+    Creado por Javier Piñas Castellanos</p>
+    </footer>
+   
+   
+   
+    
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

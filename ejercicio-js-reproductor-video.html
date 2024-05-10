@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio-js-reproductor-video</title>
+    <style>
+        .caja {
+            padding: 6px 0 6px 40px; 
+            border-radius: 40px;
+            background-color: dimgrey;
+            background-size: 20px 20px;
+            width: 550px;
+            height: 500px;
+            margin-left: 300px;
+        }
+        
+        .botones {
+           width: 55px;
+           height: 55px;
+           float: left; 
+           margin-top: 1px;
+           padding: 5px;
+          
+        }
+        
+        .numeros {
+            width: 55px;
+            height: 55px;
+            right: 5px;
+            margin-top: -6px;
+            padding: 11px;
+        }
+        
+        video {
+            width: 520px;
+            height: 380px;
+            margin-left: -4px;
+            margin-top: 40px;
+            
+            
+        }
+        
+     
+    
+</style>
+ 
+</head>
+<body>
+    <div class="caja">
+         <video src="MOV_0664.mp4" id="myVideo">
+             
+         </video>
+         <img src="rounded-pause-button.png" width="55" onclick="pauseVid()" class="botones">
+         <img src="play-button.png" width="55" onclick="playVid()" class="botones">
+         <img src="IconMute.png" width="55" onclick="vid.muted=!vid.muted" class="botones">
+         <img src="numero-uno-en-un-circulo.png" width="55" onclick="cambiar('MOV_0664.mp4')"  class="numeros">
+         <img src="numero-dos-en-un-circulo.png" width="55"  onclick="cambiar('MOV_0364.mp4')"  class="numeros">
+         <img src="numero-tres-en-un-circulo.png" width="55" onclick="cambiar('mov-0737.mp4')"  class="numeros">
+         <img src="numero-cuatro-en-boton-circular.png" width="55"  onclick="cambiar('mov-0608.mp4')"   class="numeros">
+        
+    </div>
+    
+    <script>
+        var vid = document.getElementById("myVideo"); 
+       
+    function playVid() { 
+       vid.play(); 
+    } 
+
+    function pauseVid() { 
+    vid.pause(); 
+        
+    } 
+        
+    function cambiar(pelicula) {
+      document.getElementById("myVideo").src = pelicula ;
+     }
+        
+  
+    </script>
+</body>
+</html>

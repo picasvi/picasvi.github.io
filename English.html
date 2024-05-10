@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tallinn Christmas Market</title>
+    <link rel="icon" href="star.png">      
+    <!-- favicon-->
+    <style>
+        /***Tipografía***/ 
+        @import url('https://fonts.googleapis.com/css?family=Merriweather'); /**Importa la fuente desde GoogleFonts***/
+        @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+        @import url('https://fonts.googleapis.com/css?family=Hind');
+        
+        * {                   /***Hoja de estilos global, sirve para aplicar estos estilos a todo el documento***/
+           font-family: "Merriweather", sans-serif; /***fuente tipográfica***/
+           box-sizing: border-box; //***box-sizing sirve para cambiar el modelo de caja por defecto, y border-box hace que el ancho especificado sea el equivalente al ancho total***/
+        }
+        
+        p {  /***Párrafo***/
+          font: 1.2rem 'Hind', sans-serif; /***rem se usa para modificar el tamaño de la fuente***/
+          margin: 10px 10px 10px 10px;   /***margin-top sirve para establecer la anchura del margen superior de los elementos del bloque***/
+          color: white; /***color añade el color seleccionado***/ 
+          
+          
+                
+        }
+    
+        h1, h2, {   /***h1, h2, etc son los encabezados, van de mayor tamaño (h1) a menor (h2)***/
+         
+          text-align:center; /***text-align:center sirve para centrar el contenido***/
+        }
+      
+        
+        
+        h2 {
+          font-size: 5.0rem; 
+          color: white; 
+          text-align: center;
+          font-family: "MedievalSharp", sans-serif;
+          padding-top: 70px; //***se usa para establecer la anchura de relleno superior de los elementos***//
+          
+         
+          
+          
+         }
+        
+
+        
+        h1 {
+        font-size: 5.5rem; 
+        font-family: "Merriweather", sans-serif; 
+        color: white; 
+        text-align: center;
+            
+        }
+        
+        .flags {                                   /**clase para los iconos de banderas***/
+            height: 30px;                          /**height establece la altura, y width la anchura**/
+            width: 30px; 
+            float: left;                           /**float left hace que la imagen se quede a la izquierda**/
+        }
+        
+        .tree {                                /**clase para la imagen del árbol de navidad**/ 
+            margin: 10px; 10px; 10px; 10px;  /***margin establece la anchura de algunos o todos los márgenes***/
+            float: left;
+            border-radius: 300px;  /**sirve para hacer que el borde sea redondeado**/
+        }
+        
+        .santa {                              /**clase para la imagen de Santa Claus**/
+            height: 350px;
+            width: 550px;
+            margin: 10px; 10px; 10px; 10px; 
+            float: left; 
+            border-radius: 300px; 
+        }
+        
+        .hw {                            /**clase para la imagen del vino caliente**/
+            height: 350px;
+            width: 550px;
+            margin: 10px; 10px; 10px; 10px; 
+            float: right;   /***float right hace que la imagen vaya a la derecha**/
+            border-radius: 300px; 
+        }
+        
+        
+        .danza { //**clase para la imagen de los bailarines**// 
+            height: 260px;
+            width: 360px;
+            float: right;
+            border-radius: 300px;
+        }
+        
+        .ifr {                /**coloca el mapa de Google con la ubicación del mercadillo**// 
+            margin: 10px; 10px; 10px; 10px;
+            height: 630px;
+            float: left; 
+        }
+        
+        .tran { //**coloca los iconos de bus y tranvía**// 
+            height: 30px;
+            width: 30px; 
+            float: left;
+            
+           
+        }
+        
+        .ctra { //**clase para la imagen del tranvía navideño**// 
+            height:190px;
+            width: 590px;
+            float:right; 
+            border-radius: 300px;
+        }
+        
+        .rs { //**clase para los iconos de redes sociales**// 
+            height: 30px;
+            width: 30px;
+            float: right; 
+            
+            
+        }
+        
+        .env {                                                          /**clase para el botón de enviar**/
+            background-color: red;                                    /**pone el color rojo de fondo**/
+            margin: 10px; 
+            width: 90px;
+            float: left;
+            text-align: center;
+            font: 1.1rem "Hind", sans-serif;
+            color: white; 
+            padding: 6px 14px;
+            
+        }
+        
+        
+       /***Estructura***/
+        
+        body {                                     /**cuerpo del documento**/
+            margin: 0;
+            background: #BC0000;                   
+            
+        }
+        .menu {                                    /**menu para acceder a los apartados**/
+        width: 100%;
+        background: darkblue no-repeat top center fixed ;   /**no-repeat para que no se repita el fondo, center fixed para que se quede fijo**/
+        font-family: "Merriweather", sans-serif;
+        background-size: cover;          /**especifica el tamaño de las imágenes de fondo**/
+        padding: 15px;
+        text-shadow: 0 2px 6px black;   /**hace que aparezca sombreado el texto**/ 
+        text-align: center;
+        position: fixed;        /**hace que se quede fijo el menu en toda la página**/ 
+        }
+        
+        a:hover {                     /*hover aplica dicho estilo al enlace donde el usuario ha posicionado el puntero del ratón*/
+            background: black; 
+        }
+        
+        a {                          /*propiedad para las opciones del menú(enlaces)*/
+         text-decoration: none;      /*hace que el enlace no esté subrayado*/ 
+         color: white; 
+         margin: 10px; 
+        }
+        
+        
+        
+            
+        
+        
+            
+            
+       /***Elementos***/ 
+        header {                                    /**elemento de encabezado**/ 
+            background-image: url(christmas.jpg); /**imagen de fondo del encabezado**/ 
+            padding: 210px;
+            background-size: cover;
+            
+            width: 100%; 
+            
+        }
+        
+        article {                         /**elemento que contiene texto**/ 
+            max-width: 1200px;           /**anchura máximo de un cuerpo de texto**/ 
+            margin: auto; 
+            overflow: hidden;            /**sirve para que el contenido se recorte y no se muestren barras de posición**/
+            background-color: darkgreen;
+            
+        }
+        
+        form {
+            font: 1.0rem;  /***rem se usa para modificar el tamaño de la fuente***/
+           
+          margin: 10px 10px 10px 10px;   /***margin-top sirve para establecer la anchura del margen superior de los elementos del bloque***/
+          color: white; /***color añade el color seleccionado***/ 
+        }
+        
+        footer {                       /**pie de página**/ 
+            text-align: center;
+            background-color: darkblue;
+            width: 100%;
+            background-size: cover;
+            padding: 25px;
+        }
+        
+       
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+   <nav class="menu">
+    <img class="flags"src="001-estonia.svg" title="Eesti keel">
+    <img class="flags"src="002-uk.svg" title="English">
+    <img class="flags"src="003-russia.svg" title="Pусский">
+    <img class="flags"src="004-finland.svg" title="Suomeksi">
+    <img class="flags"src="005-flag.svg" title="Deutsch">
+    <img class="flags"src="006-sweden.svg" title="Svenska">
+    <a href="#descripcion">Description</a>
+    <a href="#calendario">Calendar</a>
+    <a href="#participantes">Participants</a>
+    <a href="#lugar">Place</a>
+    <a href="#inscripcion">Inscription</a>
+    <img class="rs"src="facebook.svg" title="Facebook">
+    <img class="rs"src="instagram.svg" title="Instagram">
+  </nav>
+    
+    
+    <header>
+        <h1>Tallinn Christmas Market</h1>
+    </header>
+    <hr>
+    <article>
+   <h2 id="descripcion">Description</h2>
+    <hr>
+   
+   <p>Following the tradition, the Tallinn Christmas market will open its booths this year to give us the pleasure of enjoying a Christmas typical of a fairy tale. In Raekoja Plats, the Town Hall Square, stands a magnificent spruce, the symbol of Christmas. And our city is proud to be the first place in the world where a Christmas tree was erected: in 1441, no more No less!</p>
+   <img class="tree" src="treechristmas.jpg" title="At night it has a more magic look">
+   <p>In recent years, the market as a whole with the beautiful medieval buildings of Raekoja Plats, has become a symbol of Christmas and tourism, not only from Estonia, but throughout Europe, being described as one of the best Christmas markets in the world. continent and the world, receiving every year almost a million visitors from all over the globe. Children will have fun assured thanks to Santa Claus, who in his wooden house gives candy to children who best recite verses (sing and recite verses or poems is a tradition of our country shared with our Latvian and Lithuanian Baltic neighbors). In the different booths you can buy from high quality handicrafts to winter accessories such as gloves or scarves. And when you're a little sick of watching the stalls and you notice that your stomach rages furiously, you can satisfy your appetite with some ginger candy or taste delicious Estonian roasted dishes. You can also try the mulled wine, a typical drink from the Baltic countries, Scandinavia and Russia. Or the international hot chocolate, which always feels very good. The Christmas spirit is present, and reinforced by a special cultural program. On weekends, different music groups from Estonia and abroad will play on the market's stage, and every Sunday during the Advent period a candle will be lit, at the same time as the pastors of the Estonian and Russian Lutheran churches, and the Mayor of the city will give welcome speeches to the people in the plaza. And we will welcome the 2019 with an even more special program!<br>
+   The Christmas Market of Tallinn welcomes everyone with open arms. Merry Christmas.</p> <br></article>
+   <hr>
+   
+   <article>
+   <h2 id="calendario">Calendar</h2>
+   <hr> 
+   
+   <p>The market opens its doors from November 16 to January 7 every day from 10:00 to 20:00. Hot drinks (hot wine) can be enjoyed from Sunday to Thursday until 10pm, and on Fridays and Saturdays until 11pm. Special Christmas program: Friday from 5:00 p.m. to 7:00 p.m., Saturdays and Sundays from 12:00 p.m. to 2:00 p.m. From December 2, Santa Claus welcomes children from Monday to Sunday from 12:00 a.m. 7:00 p.m.</p> 
+   <img class="santa"src="Santa.jpg" title="Good old Santa">
+   <img class="hw" src="hotwine.jpg" title="A hot wine feels good at any place"><br></article>
+   <hr>
+   
+   <article>
+   <h2 id="participantes">Participants</h2>
+   <hr>
+   
+   <p>Every weekend different folk groups from our country and abroad will participate, ready to give us a lively show. The participants are the following:<br>
+   <strong>Friday 16th November:</strong>Viisuveeretajad (Estonia), Carolina (USA) <br>
+   <strong>Saturday 17th November:</strong>Black and White (Ireland), Mariliis Jögeva (Estonia) Solas (Ireland), Tantsusarvikud (Estonia) <br>
+   <strong>Sunday 18th November:</strong>Pühalepa (Estonia), Dance School RAPTI (Greece) <br>
+   <strong>Friday 23rd November:</strong>Leesikad (Estonia) <br>
+   <strong>Saturday 24th November:</strong>Juhukse (Estonia), Zahira (Estonia) <br>
+   <strong>Sunday 25th November:</strong>Cantitores (Finland), Kirmas (Estonia) <br>
+   <strong>Friday 30th November:</strong>Nömme (Estonia), Söleke (Estonia), Free Flow Studio (Estonia) <br>
+   <img class="danza"src="tantsu.jpg" title="Tantsusarvikud, a famous Estonian folk band">
+   <strong>Saturday 1st December:</strong>Moroshka (Russia), Tammed ja Toomed (Estonia), Harku Harakad (Estonia) <br>
+   <strong>Sunday 2nd December:</strong>Kopli (Estonia), Tallinn's Lutheran Choirs <br>
+   <strong>Friday 7th December:</strong>Vöör ja Ahter (Estonia), Dance School RAPTI (Greece) <br>
+   <strong>Saturday 8th December:</strong>Kuu (Estonia), Panter (Estonia), KT Stuudio (Estonia) <br>
+   <strong>Sunday 9th December:</strong>Ellerhein (Estonia), Ingliskad (Estonia) <br>
+   <strong>Friday 14th December:</strong>Köku (Estonia), VAT Stuudio (Estonia) <br>
+   <strong>Saturday 15th December:</strong>Tuisuline (Estonia), Happy Feet (New Zealand), Jürid-Maarid (Estonia) <br>
+   <strong>Sunday 16th December:</strong>Siki (Estonia), MYDANCE (Sweden) <br>
+   <strong>Friday 21st December:</strong>Desiree (Estonia) <br>
+   <strong>Saturday 22nd December:</strong>Kolgaküla Laneerid (Estonia), Free Flow Studio (Estonia) <br>
+   <strong>Sunday 23rd December:</strong>Löoke (Estonia), Modus (Germany) <br>
+   <strong>Friday 28th December:</strong>LTF (USA), Alhambra (USA), Asmarah (Estonia), Valeria Nikolajeva (Russia) <br>
+   <strong>Saturday 29th December:</strong>Beatrice Nebis (Estonia), Aler (Georgia) <br>
+   <strong>Sunday 30th December:</strong>Modus (Germany), Lili Adeni (Estonia) <br>
+   <strong>Monday 31st December:</strong>New Years' Eve Special Program, Nömme Huvikooli (Estonia) <br>
+   <strong>Friday 4th Januar:</strong>Terek (Russia), Jagody (Poland), Sakala Laululapsed (Estonia) <br>
+   <strong>Saturday 5th Januar:</strong>Pääsuke (Estonia), Kodu (Estonia), Leigarid (Estonia) <br>
+   <strong>Sunday 6th Januar:</strong>Koit (Estonia), Juri Zaljubovski (Russia), Mustad Kassi (Estonia).Market's closure. <br>
+   </p></article>
+   <hr>
+   
+   <article>
+   <h2 id="lugar">Place</h2>
+   <hr>
+   <iframe class="ifr" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2028.765687735836!2d24.744697181961108!3d59.43698237077853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1544343737597" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <div>
+   <p>Raekoja Plats is in the Old Town's heart. Tourists who have stayed far from city center or outskirts inhabitants, the nearest urban bus and tram stops are located only 5 minutes walking from the square. Tram line 4 connects directly Raekoja Plats with the airport.</p>
+   <p><img class="tran" src="001-bus.svg">Nearest bus stop: Viru (lines 21,21B,40,41,48,73)</p><br>
+   <p><img class="tran" src="002-tram.svg">Nearest tram stop: Viru (lines 3 and 4)</p><br>
+   <img class="ctra" src="christram.jpg" title="Christmas tram">
+   
+   </div><br></article>
+   <hr>
+   
+   <article>
+   <h2 id="inscripcion">Inscription</h2>
+   <hr>
+       <p>To inscribe in the free christmas handicraft markets, you can fill the next form:</p>
+   <form  action="" method="post" >
+    
+    <table>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="direccion"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <td>Surname</td>
+            <td><input type="text" name="apellidos"></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td><input type="text" name="cp"></td>
+        </tr>
+        
+        
+        
+    </table>
+         <input class="env" type="submit" value="Send"><br>
+         
+       </form><br></article>
+       <hr>
+   
+   
+   <footer>
+   <p>Tallinn Christmas Market 2018 English version <br>
+    Creado por Javier Piñas Castellanos</p>
+    </footer>
+   
+   
+   
+    
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
