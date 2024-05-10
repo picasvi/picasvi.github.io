@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio-js-reproductor-video</title>
+    <link rel="stylesheet" href="styles.css">
+    
+ 
+</head>
+<body>
+    <div class="caja">
+         <video src="media/tram.mp4" id="myVideo">
+             
+         </video>
+         <img src="media/rounded-pause-button.png" width="55" onclick="pauseVid()" class="botones">
+         <img src="media/play-button.png" width="55" onclick="playVid()" class="botones">
+         <img src="media/IconMute.png" width="55" onclick="vid.muted=!vid.muted" class="botones">
+         <img src="media/numero-uno-en-un-circulo.png" width="55" onclick="cambiar('media/tram.mp4')"  class="numeros">
+         <img src="media/numero-dos-en-un-circulo.png" width="55"  onclick="cambiar('media/ave.mp4')"  class="numeros">
+         <img src="media/numero-tres-en-un-circulo.png" width="55" onclick="cambiar('media/cercanias.mp4')"  class="numeros">
+         <img src="media/numero-cuatro-en-boton-circular.png" width="55"  onclick="cambiar('media/tren.webm')"   class="numeros">
+        
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
