@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horarios Renfe</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald');
+ 
+        * {
+            font-family: "Oswald", sans-serif; 
+            box-sizing: border-box;
+          }
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+        .menu {                                   
+          text-align: center;
+          background-color: red;
+          height: 40px;
+          box-shadow: 0 5px 2px grey;
+          padding-top: 5px;
+          
+        }
+        header {
+            background-color: purple;
+            color: white;
+            background-size: cover;
+            text-align: center;
+            box-shadow: 0 5px 2px grey;
+            width: 100%;
+        }
+
+      .mensaje {
+            background: purple;
+            color: white;
+            margin: 40px;
+            padding: 20px 30px;
+            box-shadow: 5px 5px 2px grey;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        a {                          /*propiedad para las opciones del menú(enlaces)*/
+         text-decoration: none;      /*hace que el enlace no esté subrayado*/ 
+         color: white; 
+         margin: 30px;
+         
+        }
+        a:hover {
+          background-color: coral;
+          font-size: 1.3rem;
+         }
+        
+        a:active {
+          background: darkred;
+        }
+       
+        .firstimage {
+            height: 390px;
+            width: 230px;
+            float: left;
+            margin: 5px;
+            border: 1px solid purple;
+            
+        }
+       
+        #ejemplos {
+            overflow: hidden;
+            width: 1600px;
+            margin: auto;
+        }
+        
+        .video {
+          margin-left: 540px;
+          float: left;
+          display: flex;
+        }
+        
+    
+        
+        .iconos {
+             height: 50px;                          
+            width: 50px; 
+            margin-bottom: 20px;
+            margin: 10px;
+            float: right;
+        }
+        
+      
+        
+        footer {
+            text-align: center;
+            background-color: red;
+            width: 100%;
+            background-size: cover;
+            margin-top: 630px;
+            padding: 55px;
+            height: 160px;
+        }
+        .logofinal {
+            width: 190px;
+            height: 100px;
+            margin-left: 200px;
+            padding-bottom: 50px;
+          
+        }
+       
+
+        @media screen and (min-width: 800px) {
+            body {
+                margin: 0;
+                }
+                nav {
+            z-index: 10; 
+        }
+            
+            
+           }
+        
+        @media screen and (min-width: 1300px) {
+            body {
+                margin: 0;
+            }
+        }
+    </style>
+  </head>
+<body>
+   <nav class="menu">
+      <a href="index.html">Presentación</a>
+      <a href="descarga.html">Descarga</a>
+      <a href="documentacion.html">Documentación</a>
+      <a href="consulta.html">Consulta</a>
+      <a href="datos-legales.html">Datos Legales</a>
+      
+  </nav>
+    <header>
+        <h1>App de los horarios de Renfe</h1>
+    </header>
+  
+  <p class="mensaje">¡Bienvenido a la página de la app Horarios Renfe! Gracias a nuestra app podrás consultar en cualquier momento horarios de trenes desde tu estación, estés donde estés.</p>
+   
+  
+   
+   <iframe class="video" width="760" height="385" src="https://www.youtube.com/embed/JXlyONHvfz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+    <footer>
+     <img class="logofinal"src="logo.png">
+     <a href="https://twitter.com/?lang=es"><img class="iconos"src="twitter.png"/></a>
+     <a href="https://es-es.facebook.com/"><img class="iconos"src="facelogo.png"/></a>
+     <a href="https://www.instagram.com/?hl=es"><img class="iconos"src="instagram.png"/></a>
+   </footer>
+</body>
+</html>
